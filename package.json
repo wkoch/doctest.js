@@ -14,7 +14,7 @@
     "build": "pack build",
     "run": "node pkg/dist-src/index.js test sample",
     "build-run": "npx run-s bundle build run",
-    "test": "npx run-s bundle build runC"
+    "test": "npm run build-run"
   },
   "@pika/pack": {
     "pipeline": [
