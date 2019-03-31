@@ -1,0 +1,41 @@
+{
+  "name": "doctestjs",
+  "version": "0.0.1",
+  "description": "Simple Unit-Testing framework for JavaScript",
+  "main": "bundle/index.js",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "sade": "^1.4.2"
+  },
+  "scripts": {
+    "bundle": "rollup src/index.js --format cjs --file bundle/index.js",
+    "build": "pack build",
+    "run": "node pkg/dist-src/index.js test sample",
+    "build-run": "npx run-s bundle build run",
+    "test": ""
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg",
+        {
+          "exclude": [
+            "tests/**/*"
+          ]
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "@pika/pack": "^0.3.6",
+    "@pika/plugin-standard-pkg": "^0.3.14",
+    "node": "latest",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^1.7.4",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-sucrase": "^2.1.0",
+    "sucrase": "^3.10.0"
+  }
+}
