@@ -33,6 +33,9 @@
 // Regex final:
 //  Separa os valores de cada teste.
 
+// Regex que lê o texto das regras:
+// ^- The [<]([^>]+)[>] of [<]([^>]+)[>] and [<]([^>]+)[>] is [<]([^>]+)[>].$
+
 let parsedTestRules = {
   test: {
     name: "Sum takes 2 numbers, returns the sum.",
