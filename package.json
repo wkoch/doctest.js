@@ -7,7 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.4.2",
-    "sade": "^1.4.2"
+    "sade": "^1.7.0"
   },
   "scripts": {
     "bundle": "rollup src/index.js --format cjs --file bundle/index.js",
