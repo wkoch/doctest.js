@@ -36,6 +36,6 @@
     "rollup": "^2.4.0",
     "rollup-plugin-node-resolve": "^4.2.3",
     "rollup-plugin-sucrase": "^2.1.0",
-    "sucrase": "^3.10.1"
+    "sucrase": "^3.13.0"
   }
 }
